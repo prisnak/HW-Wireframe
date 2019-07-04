@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework Option 1</title>
+
+	<style type="text/css">
+
+		.lightgrey{
+			background: lightgrey;
+		}
+
+		.grey{
+			background: grey;
+		}
+
+		* {
+		  box-sizing: border-box;
+		  font-family: Arial, Helvetica, sans-serif
+		  
+		}
+
+		body{
+			background: grey;
+			width: 1200px;
+			text-align: center;
+			margin:0% 10%;
+		}
+
+		header, nav, footer{
+			height: 90px;
+			margin: 20px 0;
+		}
+
+		.article{
+			padding: 10px;
+		}
+
+		.h{
+			padding: 5px;
+			text-align: center;
+		}
+
+		.p{
+			padding: 5px;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		.box {
+		float: left;
+		width: 600px;
+		padding: 20px;
+		height: 250px;
+		}
+
+		.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+		}
+
+	</style>
+</head>
+
+<body>
+			
+	<header class="lightgrey">
+		header
+	</header>
+
+	<nav class="lightgrey">
+		nav
+	</nav>
+
+	<div class="clearfix">
+		<div class="box lightgrey">
+			<p>section</p>
+			<div class="article grey">
+				<p>article</p>
+				<div class="lightgrey">
+					<p>h1, h2, h3</p>
+				</div>
+				<div class="lightgrey">
+					<p>p</p>
+				</div>
+			</div>
+		</div>
+		<div class="box lightgrey">
+			<p>Some text inside the box.</p>
+		</div>
+	</div>
+
+	<footer class="clearFloat lightgrey" id="lightgrey">
+		footer
+	</footer> 
+		
+</body>
+</html>
